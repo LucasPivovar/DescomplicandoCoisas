@@ -47,7 +47,7 @@ h1 {
 }
 header { margin-bottom: 28px; }
 .books { text-align: left; }
-.books h2 { margin: 0 0 12px; font-size: 1rem; }
+.books h2, .socials h2 { margin: 0 0 12px; font-size: 1rem; text-align: center; }
 .book {
   display: grid;
   grid-template-columns: minmax(0, 1fr) clamp(68px, 23vw, 96px);
@@ -67,6 +67,31 @@ header { margin-bottom: 28px; }
 .book-link { display: block; width: fit-content; margin-bottom: 4px; color: #a3ead1; font-size: .88rem; text-underline-offset: 3px; }
 .book-link:focus-visible { outline: 2px solid #86cbb7; outline-offset: 4px; }
 .book small { display: block; margin-top: 3px; color: #b5c0d0; font-size: .74rem; }
+.socials { margin-top: 28px; }
+.socials ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social-item {
+  display: grid;
+  place-content: center;
+  min-height: 52px;
+  padding: 7px 4px;
+  border: 1px solid #374458;
+  border-radius: 10px;
+  background: #192334;
+  color: #f6f5f2;
+  font-size: .86rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.social-item small { color: #b5c0d0; font-size: .7rem; font-weight: 400; }
+a.social-item:hover { border-color: #86cbb7; }
+a.social-item:focus-visible { outline: 2px solid #86cbb7; outline-offset: 3px; }
 </style>
 </head>
 <body>
@@ -116,6 +141,14 @@ header { margin-bottom: 28px; }
         <circle cx="48" cy="83" r="2" fill="#87c6b5"/>
       </svg>
     </article>
+  </section>
+  <section class="socials" aria-labelledby="redes">
+    <h2 id="redes">Minhas redes sociais</h2>
+    <ul>
+      <li><span class="social-item">Instagram <small>Em breve</small></span></li>
+      <li><span class="social-item">TikTok <small>Em breve</small></span></li>
+      <li><span class="social-item">Kwai <small>Em breve</small></span></li>
+    </ul>
   </section>
 </main>
 </body>
