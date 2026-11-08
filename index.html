@@ -60,6 +60,10 @@ li {
   font-weight: 600;
 }
 li small { color: #b5c0d0; font-size: .78rem; font-weight: 400; }
+.book-link { color: inherit; text-decoration: none; display: grid; gap: 2px; }
+.book-link:hover strong { text-decoration: underline; }
+.book-link:focus-visible { outline: 2px solid #86cbb7; outline-offset: 4px; border-radius: 3px; }
+.disclosure { margin: 16px 0 0; color: #b5c0d0; font-size: .75rem; }
 </style>
 </head>
 <body>
@@ -82,10 +86,17 @@ li small { color: #b5c0d0; font-size: .78rem; font-weight: 400; }
     <h1>Descomplicando Coisas</h1>
 
   </header>
-  <ul aria-label="Links em breve">
+  <ul aria-label="Links e recomendações">
     <li>Minha Amazon <small>Em breve</small></li>
-    <li>Livros que recomendo <small>Em breve</small></li>
+    <li>
+      <span>Livros que recomendo</span>
+      <a class="book-link" href="https://www.amazon.com.br/dp/8582605889?tag=descomplic0a0-20" target="_blank" rel="sponsored noopener noreferrer">
+        <strong>Física Conceitual ↗</strong>
+        <small>Paul G. Hewitt · Ver na Amazon · Publicidade</small>
+      </a>
+    </li>
   </ul>
+  <p class="disclosure">Como associado da Amazon, eu ganho com compras qualificadas.</p>
 </main>
 </body>
 </html>
